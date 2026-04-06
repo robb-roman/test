@@ -1,0 +1,25 @@
+<form id="form">
+  <input type="text" id="nombre" required>
+  <input type="text" id="mensaje" required>
+  <button type="submit">Enviar</button>
+</form>
+
+<script>
+document.getElementById("form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = {
+    nombre: document.getElementById("nombre").value,
+    mensaje: document.getElementById("mensaje").value
+  };
+
+  const res = await fetch("http://localhost:3000/api/contacto", {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify(data)
+  });
+
+  const result = await res.json();
+  window.location.href = result.whatsapp;
+});
+</script>

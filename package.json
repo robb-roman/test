@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "formulario-wa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robb-roman/test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/robb-roman/test/issues"
+  },
+  "homepage": "https://github.com/robb-roman/test#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongodb": "^7.1.1",
+    "mongoose": "^9.4.1",
+    "tailwindcss": "^4.2.2"
+  }
+}
